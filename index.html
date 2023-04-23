@@ -174,11 +174,21 @@
                                 <input class="input input__name" type="text" name="name" placeholder="Имя">
                                 <input class="input input__name" type="text" name="phone" placeholder="Телефон">
                             </div>
-                            <textarea class="textarea" name="description" cols="30" rows="10" placeholder="Тут будет какой-то текст" style="resize:none"></textarea>
-                            <button class="btn submit" type="submit">Отправить</button>
-                            <p class="form__privacy">
-                                Отправляя данную форму, вы соглашаетесь c <a class="privacy__link" href="#">Политикой конфиденциальности</a>
-                            </p>
+                            <textarea class="textarea" name="description" cols="30" rows="10"
+                                placeholder="Тут будет какой-то текст" style="resize:none"></textarea>
+                            <div class="form__submit">
+                                <button class="btn submit" type="submit">Отправить</button>
+                                <p class="form__privacy">
+                                    Отправляя данную форму, вы соглашаетесь c <a class="privacy__link"
+                                        href="#">Политикой конфиденциальности</a>
+                                </p>
+                            </div>
+                            <div class="form__submit-ok alert" style="display: none;">
+                                Заявка успешно отправлена.
+                            </div>
+                            <div class="form__submit-error alert" style="display: none;">
+                                Произошла ошибка.
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -206,6 +216,7 @@
         </footer>
     </div>
 
+    <script src="./scripts/axios.min.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 

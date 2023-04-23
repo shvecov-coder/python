@@ -3,6 +3,11 @@
     --colorMainHover: #1c7fb0;
     --colorText: #222222;
     --colorBady: #E7E7E7;
+
+    --colorOk: #032830;
+    --colorOkLight: #055160;
+    --colorErr: #2c0b0e;
+    --colorErrLight: #842029;
 }
 
 html {
@@ -415,4 +420,29 @@ ul {
 
 .privacy__link:hover {
     color: var(--colorMainHover);
+}
+
+.form__submit-ok,
+.form__submit-error {
+    color: #fff;
+    font-family: 'Jura', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.form__submit-ok {
+    background-color: var(--colorOk);
+    border-left: 10px solid var(--colorOkLight);
+}
+
+.form__submit-error {
+    background-color: var(--colorErr);
+    border-left: 10px solid var(--colorErrLight);
+}
+
+.alert {
+    padding: 20px 40px;
+    margin-top: 5px;
+    margin-bottom: 50px;
 }

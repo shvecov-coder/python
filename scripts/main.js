@@ -1,5 +1,5 @@
-const TOKEN = '6150552774:AAGCiDxSWpfEd05jL4cLmc8iomPaTUETbZs';
-const CHAT_ID = '-1001856448512';
+const TOKEN = 'none';
+const CHAT_ID = 'none';
 const URI_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
 
 const formSubmitContent = document.querySelector('.form__submit');

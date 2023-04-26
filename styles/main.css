@@ -187,6 +187,10 @@ ul {
     background-color: var(--colorMainHover);
 }
 
+.menu__link span {
+    margin-top: 8px;
+}
+
 .menu__item+.menu__item {
     margin-left: 20px;
 }
@@ -274,6 +278,37 @@ ul {
     z-index: 5;
 }
 
+.about {
+    padding-top: 60px;
+}
+
+.about__inner {
+    padding-left: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about__img {
+    border-radius: 50%;
+}
+
+.about__text {
+    max-width: 750px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.about__text p + p {
+    margin-top: 50px;
+}
+
+.about__text p span {
+    font-weight: 700;
+}
+
 .info {
     padding: 60px 0;
 }
@@ -284,13 +319,13 @@ ul {
 
 .info__text {
     text-align: center;
-    max-width: 900px;
+    max-width: 750px;
     margin: 0 auto;
     line-height: 1.6;
 }
 
 .price {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 .price__inner {
@@ -307,7 +342,7 @@ ul {
 
 .price__img {
     max-width: 350px;
-    width: 100%;    
+    width: 100%;
     display: block;
 }
 
@@ -321,7 +356,7 @@ ul {
     margin-bottom: 15px;
 }
 
-.price__adven-item + .price__adven-item {
+.price__adven-item+.price__adven-item {
     margin-top: 5px;
 }
 
@@ -374,7 +409,7 @@ ul {
     justify-content: space-between;
 }
 
-.input {   
+.input {
     display: inline-block;
     width: 47%;
     margin-bottom: 20px;

@@ -36,14 +36,26 @@
             <div class="header__menu">
                 <div class="container">
                     <ul class="menu__list">
+
                         <li class="menu__item">
-                            <a class="menu__link" href="#">
-                                Главная
+                            <a class="menu__link" href="#contacts">
+                                Контакты
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960"
+                                        width="48" fill="#fff">
+                                        <path d="M480 712 240 472l43-43 197 197 197-197 43 43-240 240Z" />
+                                    </svg>
+                                </span>
                             </a>
                         </li>
                         <li class="menu__item">
                             <a class="menu__link" href="#">
-                                Контакты
+                                Обо мне
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
+                                Цены
                             </a>
                         </li>
                     </ul>
@@ -58,6 +70,24 @@
                         <h1 class="intro__title">
                             Заставь свои идеи превратиться в реальность с помощью Python!
                         </h1>
+                    </div>
+                </div>
+            </section>
+            <section class="about">
+                <div class="container">
+                    <div class="about__inner">
+                        <img class="about__img" src="./images/me/me.jpg" alt="me">
+                        <div class="about__text">
+                            <p>
+                                Привет! Меня зовут <span>Швецов Дмитрий.</span> Я репетитор по программированию на <span>Python.</span> 
+                                Имею опыт работы разработчиком в IT компаниях, и уже 2 года работаю в сфере образования.
+                                Язык Python стал неотъемлемой частью школьной программы, он развивает
+                                алгоритмические навыки и математическое мышление.
+                            </p>
+                            <p>
+                                Я набираю учеников 5 - 9 классов для того, что бы в легкой и доступной форме научить писать код.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -160,7 +190,7 @@
                     </div>
                 </div>
             </section>
-            <section class="question">
+            <section id="contacts" class="question">
                 <div class="container">
                     <div class="question__inner">
                         <h4 class="section__title question__title">
@@ -176,8 +206,15 @@
                             </div>
 
                             <select class="input select">
-                                <option value='none'>Удобное время</option>
-
+                                <option value='none' disabled hidden selected>Удобное время</option>
+                                <option value='any time'>Любое время</option>
+                                <option value='08:00 - 10:00'>08:00 - 10:00</option>
+                                <option value='10:00 - 12:00'>10:00 - 12:00</option>
+                                <option value='12:00 - 14:00'>12:00 - 14:00</option>
+                                <option value='14:00 - 16:00'>14:00 - 16:00</option>
+                                <option value='16:00 - 18:00'>16:00 - 18:00</option>
+                                <option value='18:00 - 20:00'>18:00 - 20:00</option>
+                                <option value='20:00 - 22:00'>20:00 - 22:00</option>
                             </select>
 
                             <textarea class="textarea" name="description" cols="30" rows="10"

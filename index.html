@@ -35,35 +35,59 @@
             </div>
             <div class="header__menu">
                 <div class="container">
-                    <ul class="menu__list">
-
-                        <li class="menu__item">
-                            <a class="menu__link" href="#contacts">
-                                Контакты
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960"
-                                        width="48" fill="#fff">
-                                        <path d="M480 712 240 472l43-43 197 197 197-197 43 43-240 240Z" />
-                                    </svg>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">
-                                Обо мне
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">
-                                Цены
-                            </a>
-                        </li>
-                    </ul>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#contacts">
+                                    Контакты
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960"
+                                            width="48" fill="#fff">
+                                            <path d="M480 712 240 472l43-43 197 197 197-197 43 43-240 240Z" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                    Обо мне
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                    Цены
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="button__burger" type="button">
+                            <img class="button__burger-img" src="./images/svg/menu.svg" alt="menu">
+                        </button>
+                    </nav>
                 </div>
             </div>
+            <nav class="burger">
+                <ul class="burger__list">
+                    <li class="burger__item">
+                        <a class="burger__link" href="#contacts">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="burger__item">
+                        <a class="burger__link" href="#">
+                            Обо мне
+                        </a>
+                    </li>
+                    <li class="burger__item">
+                        <a class="burger__link" href="#">
+                            Цены
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
         <main class="main">
+
             <section class="intro">
                 <div class="container">
                     <div class="intro__inner">
@@ -73,6 +97,7 @@
                     </div>
                 </div>
             </section>
+           
             <section class="about">
                 <div class="container">
                     <div class="about__inner">
@@ -93,6 +118,7 @@
                     </div>
                 </div>
             </section>
+            
             <div class="info">
                 <div class="container">
                     <h4 class="section__title info__title">
@@ -108,9 +134,12 @@
                     </p>
                 </div>
             </div>
+            
             <section class="prices">
                 <div class="container">
-
+                    <h4 class="section__title info__title">
+                        Цены
+                    </h4>
                     <ul class="price__list">
                         <li class="price__item">
                             <div class="price">
@@ -172,9 +201,9 @@
                             </div>
                         </li>
                     </ul>
-
                 </div>
             </section>
+            
             <section id="contacts" class="question">
                 <div class="container">
                     <div class="question__inner">
@@ -187,7 +216,7 @@
                         <form class="form" action="#">
                             <div class="form__top">
                                 <input class="input input__name" type="text" name="name" placeholder="Имя">
-                                <input class="input input__name" type="text" name="phone" placeholder="Телефон">
+                                <input class="input input__phone" type="text" name="phone" placeholder="Телефон">
                             </div>
 
                             <select class="input select">
@@ -224,6 +253,8 @@
             </section>
         </main>
 
+
+
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
@@ -246,6 +277,7 @@
     </div>
 
     <script src="./scripts/axios.min.js"></script>
+    <!-- <script src="./scripts/send.js"></script> -->
     <script src="./scripts/main.js"></script>
 </body>
 

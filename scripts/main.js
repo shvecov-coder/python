@@ -1,39 +1,24 @@
-const TOKEN = 'none';
-const CHAT_ID = 'none';
-const URI_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
+const menuBurger = document.querySelector('.button__burger');
+const burgerList = document.querySelector('.burger');
 
-const formSubmitContent = document.querySelector('.form__submit');
-const formOk = document.querySelector('.form__submit-ok');
-const formErr = document.querySelector('.form__submit-error');
 
-document.querySelector('.form').addEventListener('submit', function(element) {
-    element.preventDefault();
 
-    let message = `<b>Новая заявка</b>\n`;
-    message += `<b>Имя: ${ this.name.value }</b>\n`;
-    message += `<b>Телефон: ${ this.phone.value }</b>\n`;
-    message += `<b>Описание:</b> ${ this.description.value }`;
-
-    axios.post(URI_API, {
-        chat_id: CHAT_ID,
-        parse_mode: 'html',
-        text: message
-    })
-    .then((data) => {
-        this.name.value = '';
-        this.phone.value = '';
-        this.description.value = '';
-        formSubmitContent.style.display = 'none';
-        formErr.style.display = 'none';
-        formOk.style.display = 'block';
-    })
-    .catch((err) => {
-        console.error(err);
-        this.name.value = '';
-        this.phone.value = '';
-        this.description.value = '';
-        formSubmitContent.style.display = 'none';
-        formOk.style.display = 'none';
-        formErr.style.display = 'block';
-    })
+menuBurger.addEventListener('click', () => {
+    if (burgerList.classList.contains('burger--open')) {
+        closeBurgerMenu()
+    } else {
+        openBurgerMenu();
+    }
 });
+
+function openBurgerMenu() {
+    const headerTopHeigth = document.querySelector('.header-top').offsetHeight;
+    const headerMenuHeigth = document.querySelector('.header__menu').offsetHeight;
+    burgerList.classList.add('burger--open');
+    burgerList.style.top = headerTopHeigth + headerMenuHeigth + "px";
+}
+
+function closeBurgerMenu(){
+    burgerList.classList.remove('burger--open');
+    burgerList.style.top = -400 + '%';
+}

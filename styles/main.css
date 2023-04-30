@@ -340,8 +340,7 @@ ul {
     font-size: 52px;
     line-height: 1.5;
     color: #fff;
-    padding-top: 80px;
-    padding-bottom: 40px;
+    padding: 80px 10px 40px;
     max-width: 1000px;
     margin: 0 auto;
     z-index: 5;

@@ -1,8 +1,6 @@
 const menuBurger = document.querySelector('.button__burger');
 const burgerList = document.querySelector('.burger');
 
-
-
 menuBurger.addEventListener('click', () => {
     if (burgerList.classList.contains('burger--open')) {
         closeBurgerMenu()
